@@ -1,9 +1,17 @@
 # Build/install Wrap
 
 set(WRAP_BOOST_LIBRARIES
-  Boost::system
-  Boost::filesystem
-  Boost::thread
+#  Boost::system
+#  Boost::filesystem
+#  Boost::thread
+        optimized
+        ${Boost_FILESYSTEM_LIBRARY_RELEASE}
+        ${Boost_SYSTEM_LIBRARY_RELEASE}
+        ${Boost_THREAD_LIBRARY_RELEASE}
+        debug
+        ${Boost_FILESYSTEM_LIBRARY_RELEASE}
+        ${Boost_SYSTEM_LIBRARY_RELEASE}
+        ${Boost_THREAD_LIBRARY_RELEASE}
 )
 
 # Allow for disabling serialization to handle errors related to Clang's linker
