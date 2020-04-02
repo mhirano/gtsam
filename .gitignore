@@ -1,7 +1,9 @@
 /build*
 /cmake-build-debug*
 /cmake-build-release*
+/cmake-build-release*
 /debug*
+/release*
 .idea
 *.pyc
 *.DS_Store
